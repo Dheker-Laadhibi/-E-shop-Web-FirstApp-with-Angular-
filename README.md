@@ -1,2 +1,8 @@
-# -E-Commerce-Web-App-with-Angular-
-Welcome to my GitHub repository for an exciting e-commerce web application built using Angular! This project aims to create a dynamic and user-friendly online shopping experience.( My First application using angular)
+# -Eproduct is  MyFirstApplicationWithAngular-
+what did i learn during this project :
+ Angular fundamentals and architecture
+ Create interactive user interfaces with components
+Perform HTTP requests and handle errors like a pro
+Configure routing and navigation for seamless user experiences
+Apply best practices and optimize your Angular apps for peak performance
+Avoid common pitfalls and write clean, maintainable code
