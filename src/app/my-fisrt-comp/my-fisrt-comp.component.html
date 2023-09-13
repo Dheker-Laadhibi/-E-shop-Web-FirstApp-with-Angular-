@@ -1,0 +1,79 @@
+<body>
+
+  <h2>Padded input fields</h2>
+  
+  <form (ngSubmit)="onSubmit()">
+    <label for="fname">First Name</label>
+    <input type="text" 
+
+    id="fname" name="fname" 
+
+    [(ngModel)]="name" required
+
+     >
+
+
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" [(ngModel)]="lastname">
+    <label for="lname">email</label>
+    <input type="text" id="lname" name="email" [(ngModel)]="email" >
+    <button class="button button2" type="submit">submit</button>
+  </form>
+  
+  
+
+  <!--
+<div *ngIf="isSubmitted">
+
+      <h3 >form data</h3>
+      <p><strong>name:</strong>{{name}}</p>
+      <p><strong>last name:</strong>{{lastname}}</p>
+      <p><strong>email:</strong>{{email}}</p>
+  </div>
+-->
+
+
+<!--
+
+<table *ngIf="isSubmitted">
+  <tr>
+    <th>name</th>
+    <th>Lastname</th>
+    <th>email</th>
+  </tr>
+  <tr *ngFor="let msg of messages; let i=index">
+    <td>{{i}}</td>
+    <td>{{msg.name}}</td>
+    <td>{{msg.lastname}}</td>
+    <td>{{msg.email}}</td>
+  </tr>
+ 
+</table>
+-->
+
+<div class="flex-container" *ngIf="isSubmitted" >
+
+<app-message-details   *ngFor="let msg of messages; let i=index" [message]="msg"
+[index]="i"
+(delete)="deleteMessage($event)"
+
+
+>
+ 
+   
+</app-message-details>
+ 
+
+
+
+
+
+
+</div>
+
+
+
+
+
+  </body>
